@@ -1,0 +1,1 @@
+Hola Ivan en el paso 5. Simular y resolver un conflito, invertido el orden en que hago el pul request y el conflicto se genera cuando cuando mergeo la rama feature/suma difiriendo del orden que plantea el paso pero el conflicto se genera igualamnete y todo lo demas es exactamente igual.
