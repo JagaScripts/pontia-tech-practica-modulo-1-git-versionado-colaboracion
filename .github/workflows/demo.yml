@@ -1,0 +1,25 @@
+# Nombre del workflow
+name: Saludo Manual
+
+# Disparador (trigger) del workflow
+# workflow_dispatch permite que este workflow se ejecute manualmente
+on:
+  workflow_dispatch:
+
+# Define los trabajos que se ejecutarán en el workflow
+jobs:
+  # Identificador único del trabajo
+  imprimir-nombre:
+    # Nombre del trabajo que se mostrará en la interfaz de GitHub
+    name: Imprimir Nombre Completo
+
+    # Especifica la máquina virtual donde se ejecutará el trabajo
+    # 'ubuntu-latest' es la opción más común y recomendada
+    runs-on: ubuntu-latest
+
+    # Secuencia de pasos que se ejecutarán en este trabajo
+    steps:
+      # Paso 1: Imprimir el nombre en la consola del runner
+      # El comando 'run' ejecuta comandos de la línea de comandos
+      - name: Ejecutar comando echo con el nombre
+        run: echo "Jose Antonio González Alcántara"
